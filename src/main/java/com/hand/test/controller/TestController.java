@@ -40,6 +40,7 @@ public class TestController {
         People people = peopleService.initUser();
         Map<String, Object> result = new HashMap<>(16);
         result.put("name", people.getUserName());
+        result.put("password", people.getPassword());
         JSONObject JSONObj = JSONObject.fromObject(result);
         return JSONObj.toString();
     }
