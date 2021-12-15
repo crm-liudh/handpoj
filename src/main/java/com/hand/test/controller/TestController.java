@@ -43,5 +43,6 @@ public class TestController {
         result.put("password", people.getPassword());
         JSONObject JSONObj = JSONObject.fromObject(result);
         return JSONObj.toString();
+
     }
 }
